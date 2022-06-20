@@ -1,10 +1,10 @@
-function Header() {
-  return (
-    <header className="">
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
-      <p>Aqui tem um header</p>
-    </header>
-  );
-}
+import React from "react";
 
-export default Header;
+export default function Header(){
+  return(
+    <>
+    <h1>trabalho em dupla</h1>
+    </>
+  )
+
+}
