@@ -17,7 +17,6 @@ const FooterLink = styled.ul`
   float: left;
   font-size: "14px";
   display: flex;
-  padding-top: 0;
   padding-left: 100px;
   text-decoration: none;
   list-style-type: none;
@@ -26,17 +25,19 @@ const FooterLink = styled.ul`
   text-align: center;
   justify-content: space-evenly;
   color: black;
-  top: 0px;
-  left: 0px;
-  background: #f2f4f1 0% 0% no-repeat padding-box;
-  opacity: 1;
   flex-direction: row;
   align-items: center;
+`;
+
+const FooterStyle = styled.div`
+  background: #f2f4f1 0% 0% no-repeat padding-box;
+  height: 35vh;
 `;
 
 const Rodape = styled.div`
   left: 0px;
   width: 100%;
+  height: 8vh;
   background: #446061 0% 0% no-repeat padding-box;
   text-align: center;
   font: normal normal normal 16px/32px Roboto;
@@ -50,19 +51,20 @@ function Footer() {
     <>
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
       <GlobalStyle />
-      <p>FOOOOOOOOOOOOOOOOOOOter</p>
-      <FooterLink>
-        <img src={instaIcon} alt="Insta Icon" />
-        <img src={twitterIcon} alt="Twiter Icon" />
-        <img src={facebookIcon} alt="facebook Icon" />
-        <img src={pinterestIcon} alt="Pinterest Icon" />
-      </FooterLink>
-      <FooterLink>
-        <li>About</li>
-        <li>Recipes</li>
-        <li>subscribs</li>
-      </FooterLink>
 
+      <FooterStyle>
+        <FooterLink>
+          <img src={instaIcon} alt="Insta Icon" />
+          <img src={twitterIcon} alt="Twiter Icon" />
+          <img src={facebookIcon} alt="facebook Icon" />
+          <img src={pinterestIcon} alt="Pinterest Icon" />
+        </FooterLink>
+        <FooterLink>
+          <li>About</li>
+          <li>Recipes</li>
+          <li>subscribs</li>
+        </FooterLink>
+      </FooterStyle>
       <Rodape>
         <p>
           Trabalho colaborativo VNW. Referência:
